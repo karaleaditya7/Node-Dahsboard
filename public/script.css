@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    z-index: 1000; 
+}
+
+.container {
+    margin-top: 60px; 
+}
+
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.left {
+    width: 20%;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 80%;
+    background-color: #d0d0d0; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0 2px;
+}
+
+input, button {
+    margin-top: 1px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#account {
+    padding: 5px 10px;
+    background-color: rgb(12, 111, 241);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+#account:hover {
+    background-color: rgb(145, 220, 230);
+}
+
+
+#result {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#bucketList, #clustersList, #rdsList {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+/* Dropdown========== */
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .show {display:block;}
+
+  #clustersList div{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+
+  #clustersList div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+  

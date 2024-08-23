@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <h1>MyThrive AWS</h1>
+
+    <div class="container">
+        <div class="left">
+            <div class="dropdown">
+                <button onclick="dropDown()" class="dropbtn">Select Account</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="selectOption('default')">Development</a>
+                    <a href="#" onclick="selectOption('thrive_prod')">Production</a>
+                </div>
+            </div>
+            <div id="selectedOption" class="selected-option">No Account Selected</div>
+        </div>
+
+        <div class="right">
+            <button id="showClustersBtn">Show ECS Clusters</button>
+            <div id="clustersList"></div>
+
+            <form id="ecsForm">
+                <label for="clusterName">Cluster Name</label><br>
+                <input type="text" id="clusterName" name="clusterName" readonly><br>
+                <label for="startDate">Start Date</label><br>
+                <input type="date" id="startDate" name="startDate"><br>
+                <label for="endDate">End Date</label><br>
+                <input type="date" id="endDate" name="endDate"><br>
+                <button id="button1" type="submit">Submit</button>
+            </form>
+            <p>Max CPU Utilization:</p>
+            <div id="result">
+                <p id="maxCPU"></p>
+            </div>
+
+            <button id="showBuckets">Show S3 Buckets</button>
+            <div id="bucketList"></div>
+
+            <button id="showRDS">Show RDS Instance</button>
+            <div id="rdsList"></div>
+
+            <script src="dropdown.js"></script>
+            <script src="ecs.js"></script>
+            <script src="s3.js"></script>
+            <script src="rds.js"></script>
+        </div>
+    </div>
+</body>
+</html>
